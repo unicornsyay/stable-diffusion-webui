@@ -8,7 +8,7 @@ import warnings
 import json
 from threading import Thread
 
-from fastapi import FastAPI
+import fastapi #import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from packaging import version
@@ -322,7 +322,7 @@ def webui():
             server_port=cmd_opts.port,
             ssl_keyfile=cmd_opts.tls_keyfile,
             ssl_certfile=cmd_opts.tls_certfile,
-            ssl_verify=cmd_opts.disable_tls_verify,
+            #ssl_verify=cmd_opts.disable_tls_verify,
             debug=cmd_opts.gradio_debug,
             auth=[tuple(cred.split(':')) for cred in gradio_auth_creds] if gradio_auth_creds else None,
             inbrowser=cmd_opts.autolaunch,
