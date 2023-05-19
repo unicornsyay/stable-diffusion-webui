@@ -1,0 +1,5 @@
+https://github.com/unicornsyay/stable-diffusion-webui
+
+I am unicornsyay, and just wanted to thank you for checking out this pre-release. Check back soon as I convert this into an extension. 
+
+My plan is to create a second batch file which will give you the option to either download everything (current Automatic1111 version, or to work in offline mode). I also want to make the memory optimizations into a seperate argument instead of using --lowvram. 

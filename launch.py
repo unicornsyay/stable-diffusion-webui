@@ -310,9 +310,8 @@ def prepare_environment():
 
     if not os.path.isfile(requirements_file):
         requirements_file = os.path.join(script_path, requirements_file)
-    run_pip(f"install -r \"{requirements_file}\"", "requirements")
-
-    run_extensions_installers(settings_file=args.ui_settings_file)
+        run_pip(f"install -r \"{requirements_file}\"", "requirements")  #if this line is not indented it will install everytimee you this file. 
+    run_extensions_installers(settings_file=args.ui_settings_file)      #if this file is indented, it will only run when requirements aren't there. Which isn't what you want.
 
     if args.update_check:
         version_check(commit)

@@ -8,7 +8,7 @@ import warnings
 import json
 from threading import Thread
 
-import fastapi #import FastAPI
+import fastapi #import FastAPI commented out because it causes errors because it can't find "FastAPI"
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from packaging import version
