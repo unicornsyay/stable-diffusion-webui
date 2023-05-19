@@ -1,0 +1,1 @@
+if you encounter errors with another user owning a file found in the repository, please delete all files inside this folder, and rerun the userbat file. You will redownload all requisite files and you'll be good to go!
